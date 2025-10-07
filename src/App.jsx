@@ -1,6 +1,6 @@
 
 
-import './App.css'
+
 import Navbar from '../src/components/Navbar'
 import Home from '../src/pages/Home'
 import Contact from '../src/pages/Contact'
