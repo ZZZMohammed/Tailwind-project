@@ -1,19 +1,24 @@
-import { useState } from 'react'
+
 
 import './App.css'
-import Navbar from './components/Navbar'
-import Gallory from './components/Gallory'
+import Navbar from '../src/components/Navbar'
+import Home from '../src/pages/Home'
+import Contact from '../src/pages/Contact'
+import { Routes , Route } from 'react-router-dom'
+
+
 
 function App() {
 
 
   return (
     <>
-     <Navbar /> 
-
-     <main className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-          <Gallory />
-     </main> 
+        <Navbar />
+       <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
     </>
   )
 }
