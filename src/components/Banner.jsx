@@ -13,6 +13,12 @@ export default function Banner() {
             </div>
             
         </div>
+
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+          <div><img src="/ab1.jpg" alt="" className='h-80 '/></div>
+          <div><img src="/area-1.jpg" alt="" className='h-80 '/></div>
+          <div><img src="/area-2.jpg" alt="" className='h-80 '/></div>
+        </div>
     </section>
   )
 }
