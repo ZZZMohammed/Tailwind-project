@@ -16,3 +16,47 @@ html {
 }
 
 
+@layer base {
+
+    body {
+        @apply bg-gray-100 font-sans antialiased ;
+    }
+
+    .app-container {
+       @apply   max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
+    }
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply text-white px-6 py-3 rounded-lg font-medium text-center transition shadow-lg;
+    background-color: #FECB56;
+  }
+
+  .btn-primary:hover {
+    background-color: #e5b54d; /* slightly darker hover shade */
+    box-shadow: 0 0 10px #FECB56;
+  }
+
+
+
+    /* ---------- Cards ---------- */
+  /* .food-card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .food-card-image {
+    @apply h-48 w-full bg-gradient-to-r flex items-center justify-center;
+  }
+
+  .food-card-icon {
+    @apply w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3;
+  }
+
+  .food-card-tag {
+    @apply inline-block px-3 py-1 text-xs font-semibold rounded-full;
+  } */
+
+  
+}

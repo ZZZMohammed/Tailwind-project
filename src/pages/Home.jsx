@@ -1,17 +1,21 @@
 
-import React from 'react'
 
-import Gallory from '../components/Gallory'
-import Cards from '../components/cards'
+// import Gallory from '../components/Gallory'
+import FoodItems from '../components/FoodItems'
+import Hero from '../components/Hero'
+
+
 
 export default function Home() {
   return (
     <>
  
 
-     <main className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-          <Gallory />
-          <Cards />
+     <main >
+          <Hero />
+          <FoodItems />
+          {/* <Gallory /> */}
+        
      </main> 
     </>
   )
