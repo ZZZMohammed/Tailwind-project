@@ -1,3 +1,7 @@
+
+import { motion } from "framer-motion";
+
+
 const food_det = [
   {
     id: 1,
@@ -32,9 +36,16 @@ const food_det = [
 export default function FoodItems() {
   return (
     <section className="app-container py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl mb-12 font-bold text-gray-900 dark:text-white">
+      <motion.h1
+        className="text-3xl md:text-4xl lg:text-5xl mb-12 font-bold text-gray-900 dark:text-white"
+        
+        initial={{ x: -100, opacity: 0 }}       // before it’s visible
+        whileInView={{ x: 0, opacity: 1 }}      // when scrolled into view
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}  // trigger once, when 20% visible
+      >
         Popular Food Items
-      </h1>
+      </motion.h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {food_det.map((food) => (
